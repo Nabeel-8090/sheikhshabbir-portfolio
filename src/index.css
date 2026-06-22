@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-ink-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-paper font-sans antialiased;
+    font-feature-settings: 'ss01' 1;
+  }
+
+  ::selection {
+    @apply bg-brass/30 text-paper;
+  }
+
+  /* Visible keyboard focus, respected everywhere */
+  :focus-visible {
+    outline: 2px solid #C9974F;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Chamfered "machined plate" corner clip — the site's signature card shape */
+  .chamfer {
+    clip-path: polygon(
+      16px 0%, 100% 0%, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0% 100%, 0% 16px
+    );
+  }
+  .chamfer-sm {
+    clip-path: polygon(
+      8px 0%, 100% 0%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0% 100%, 0% 8px
+    );
+  }
+
+  .eyebrow {
+    @apply font-mono text-[11px] tracking-widest2 uppercase text-brass;
+  }
+
+  .section-pad {
+    @apply px-6 sm:px-10 lg:px-16 xl:px-24;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

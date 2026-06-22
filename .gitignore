@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local env — never commit real keys
+.env
+.env.local
+.env.production
+
+# Editor / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
