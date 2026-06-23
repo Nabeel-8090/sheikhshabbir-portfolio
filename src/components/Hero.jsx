@@ -165,7 +165,7 @@ function Hero() {
             className="hidden sm:flex absolute -left-8 top-10 items-center gap-2 bg-ink-panel border border-ink-line px-3 py-2 chamfer-sm"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-blue animate-blink" />
-            <span className="font-mono text-[10px] uppercase tracking-wider text-steel">CNC Floor — Karachi</span>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-steel">Designer</span>
           </motion.div>
 
           <motion.div
