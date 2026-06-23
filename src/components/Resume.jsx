@@ -28,7 +28,7 @@ function Resume() {
         </div>
 
         <a
-          href="/resume.pdf"
+          href="assets\Sheikh_Shabbir_Resume.pdf"
           download
           className="chamfer inline-flex items-center gap-2 bg-brass text-ink px-7 py-4 font-mono text-[13px] font-medium uppercase tracking-wider hover:bg-brass-light transition-colors shrink-0"
         >

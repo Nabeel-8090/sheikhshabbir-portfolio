@@ -4,8 +4,8 @@
 export const profile = {
   name: 'Sheikh Shabbir',
   initials: 'SS',
-  roleShort: 'H2D/3D Designer',
-  roleLong: 'H2D/3D Designer & Mechanical Parts Designer',
+  roleShort: '2D/3D Designer',
+  roleLong: '2D/3D Mechanical Parts Designer',
   title: 'CNC Machinist — Designer',
   tools: ['CorelDRAW', 'Siemens NX', 'AutoCAD', 'Adobe Illustrator'],
   location: 'Orangi Town, Karachi, Pakistan',
@@ -75,10 +75,8 @@ export const experience = [
     end: 'Present',
     current: true,
     points: [
-      'Set up and operate CNC and laser cutting machines to convert CAD drawings into finished mechanical parts.',
-      'Read and interpret technical drawings to program toolpaths and select correct cutting parameters per material.',
-      'Carry out in-process and final inspection of parts against drawing tolerances, flagging deviations before handoff.',
-      'Work directly with the design stage to flag manufacturability issues early, reducing rework on the floor.',
+      'Operated CNC laser machines and created precise 2D/3D vector designs.',
+      'Managed complete CNC programming and execution with confidence.',
     ],
   },
   {
@@ -89,10 +87,8 @@ export const experience = [
     end: 'Nov 2023',
     current: false,
     points: [
-      'Operated CNC machinery for precision cutting and shaping of mechanical components across varied production runs.',
-      'Assisted in tooling setup, machine calibration and routine maintenance to keep output within spec.',
-      'Collaborated with the design team to review part files ahead of production and confirm machining feasibility.',
-      'Maintained production records and quality logs for completed jobs.',
+      'Led CNC laser cutting operations and mechanical part designing.',
+      'Delivered efficient programs and accurate designs independently',
     ],
   },
 ]
@@ -102,24 +98,26 @@ export const education = [
     level: 'Matriculation (Science)',
     school: 'TCF School',
     period: '2020 – 2022',
-    score: '90.36%',
+    score: '90.5%',
   },
   {
     level: 'Intermediate (Pre-Engineering)',
     school: 'D. J. Sindh Government Science College',
     period: '2022 – 2024',
-    score: '55%',
+    score: '45%',
   },
 ]
 
+export const certificatesLink = 'https://drive.google.com/drive/folders/1hVbe0HJhWECWxd5o7NATYeV7qLihmtL3'
+
 export const certifications = [
   {
-    title: 'CNC Technology — Level 4',
+    title: 'Advanced CNC Machining (CAD/CAM) — Level 4',
     issuer: 'Hunar Foundation',
     badge: 'Government Certified',
   },
   {
-    title: 'Mechanical Technology — Level 2',
+    title: 'Mechanical Technology (Machinist — Turner) — Level 2',
     issuer: 'Hunar Foundation',
     badge: 'Government Certified',
   },

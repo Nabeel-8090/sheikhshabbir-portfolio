@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { ShieldCheck } from 'lucide-react'
+import { ShieldCheck, ExternalLink } from 'lucide-react'
 import SectionHeading from './SectionHeading'
-import { certifications } from '../data/content'
+import { certifications, certificatesLink } from '../data/content'
 
 function Certifications() {
   return (
@@ -41,6 +41,25 @@ function Certifications() {
           </motion.div>
         ))}
       </div>
+
+      {/* Single link for both certificates */}
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-40px' }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="mt-8 max-w-3xl"
+      >
+        <a
+          href={certificatesLink}
+          target="_blank"
+          rel="noreferrer"
+          className="chamfer-sm inline-flex items-center gap-3 border border-brass/50 text-brass px-6 py-3.5 font-mono text-[12px] uppercase tracking-wider hover:bg-brass/10 transition-colors group"
+        >
+          <ExternalLink size={15} strokeWidth={2} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          View Certificates on Google Drive
+        </a>
+      </motion.div>
     </section>
   )
 }
