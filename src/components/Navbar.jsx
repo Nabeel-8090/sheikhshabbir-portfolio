@@ -15,6 +15,15 @@ function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const handleMobileNav = (e, href) => {
+    e.preventDefault()
+    setOpen(false)
+    setTimeout(() => {
+      const target = document.querySelector(href)
+      if (target) target.scrollIntoView({ behavior: 'smooth' })
+    }, 320)
+  }
+
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
@@ -87,7 +96,7 @@ function Navbar() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => handleMobileNav(e, link.href)}
                     className="block py-3 border-b border-ink-line/60 hover:text-brass transition-colors"
                   >
                     {link.label}
@@ -97,14 +106,14 @@ function Navbar() {
               <li className="pt-4 flex gap-3">
                 <a
                   href="#resume"
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => handleMobileNav(e, '#resume')}
                   className="chamfer-sm flex-1 text-center border border-brass/60 text-brass px-4 py-2.5"
                 >
                   Resume
                 </a>
                 <a
                   href="#contact"
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => handleMobileNav(e, '#contact')}
                   className="chamfer-sm flex-1 text-center bg-brass text-ink px-4 py-2.5"
                 >
                   Contact
